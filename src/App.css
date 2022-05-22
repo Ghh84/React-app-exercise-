@@ -6,7 +6,7 @@
   align-items: center;
   flex-direction: column;
   font-family: "Nunito", sans-serif;
-  background-color: rgb(158, 144, 127);
+  background-color: rgb(115, 104, 91);
 }
 body {
   padding: 0;
@@ -18,20 +18,23 @@ body {
      ========================================================================== */
      .btn {
       display: inline-block;
+      border-radius: 4px;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
       line-height: 30px;
       padding: 5px 5px;
-      margin-top: 10px;
+      margin-top: 30px;
+      margin-bottom: 30px;
       transition: all 0.4s ease;
       cursor: pointer;
       font-size: 30px;
       color: rgba(25, 10, 36, 0.927);
-      background-color: rgb(222, 208, 208);
+      background-color: rgb(125, 78, 22);
       font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
     }
     .list {
       list-style:circle;
       line-height: 30px;
-      margin-top:30px;
+      margin-top:0px;
       cursor: pointer;
       font-size: 20px;
       color: rgba(82, 23, 125, 0.927);
@@ -39,9 +42,7 @@ body {
       font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
     }
 
-    .divList{
-      /* list-style:circle; */
-      /* display: inline-block; */
+    /* .divList{
       line-height: 30px;
       margin-top:30px;
       cursor: pointer;
@@ -49,14 +50,10 @@ body {
       color: rgba(82, 23, 125, 0.927);
       background-color: gray;
       font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif; 
-    }
+    } */
     .span{
-      /* list-style:circle; */
       font-style: italic;
       line-height: 30px;
-      /* padding: 5px 5px;
-      margin-top:30px;
-      transition: all 0.4s ease; */
       cursor: pointer;
       font-size: 25px;
       color: rgba(3, 5, 9, 0.878);
@@ -77,79 +74,4 @@ body {
 
 
    
-    /* .modal.header {
-     padding:9px 15px;
-     border-bottom:1px solid #eee;
-     background-color:  aquamarine;
-    }
-
-    .modalBackground {
-      width: 100vw;
-      height: 100vh;
-      background-color: rgba(200, 200, 200);
-      position: fixed;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
     
-    .modalContainer {
-      width: 500px;
-      height: 500px;
-      border-radius: 12px;
-      background-color: white;
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-      display: flex;
-      flex-direction: column;
-      padding: 25px;
-    }
-    
-    .modalContainer .title {
-      display: inline-block;
-      text-align: center;
-      margin-top: 10px;
-    }
-    
-    .titleCloseBtn {
-      display: flex;
-      justify-content: flex-end;
-    }
-    
-    .titleCloseBtn button {
-      background-color: transparent;
-      border: none;
-      font-size: 25px;
-      cursor: pointer;
-    }
-    
-    .modalContainer .body {
-      flex: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 1.7rem;
-      text-align: center;
-    }
-    
-    .modalContainer .footer {
-      flex: 20%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    
-    .modalContainer .footer button {
-      width: 150px;
-      height: 45px;
-      margin: 10px;
-      border: none;
-      background-color: cornflowerblue;
-      color: white;
-      border-radius: 8px;
-      font-size: 20px;
-      cursor: pointer;
-    }
-    
-    #cancelBtn {
-      background-color: crimson;
-    } */
