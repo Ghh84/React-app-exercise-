@@ -1,15 +1,13 @@
 import React, { Component } from 'react'
-// import Joi from 'joi-browser'
+import Joi from 'joi-browser'
 class Input extends Component {
-  state = {
-    data: {},
-    errors: {},
-  }
+//   state = {
+//     data: {},
+//     errors: {},
+//   }
 //   schema = {
-//     userId: Joi.string(),
-//     sName: Joi.string().required().label('Name'),
-//     sCity: Joi.string().required().label('City'),
-//     sAmount: Joi.string().required().label('Amount'),
+//     Name: Joi.string().required().label('Name'),
+    
 //   }
 
 //   validate = () => {
@@ -52,20 +50,19 @@ class Input extends Component {
     const {
       name,
       label,
-      action,
+      handleInputChange,
       error,
       value = '',
     } = this.props
     return (
-        <div class="input-group input-group-lg" style={{ paddingBottom: '20px' }}>
-            <span class="input-group-text" id="inputGroup-sizing-lg">{label}</span>
+        <div className="input-group input-group-lg" style={{ paddingBottom: '20px' }}>
+            <span className="input-group-text" id="inputGroup-sizing-lg">{label}</span>
             <input
               name={name}
               value={value}
               className="form-control"
               type="text"
-              //validate
-              onChange={(e) => action(e.target.value)}
+              onChange={(e) => handleInputChange(e.target.value)}
             />
           {error && <div className="alert alert-danger">{error}</div>}
      </div>
