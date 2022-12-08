@@ -34,8 +34,9 @@ const App = () => {
     setButton(0)
     setShow(true)
   }
-  function handleEdit(){
+  function handleUpdate(){
     //
+    alert('Updated')
   }
   function createKey(item, column){
     return item+ column;
@@ -55,7 +56,7 @@ const App = () => {
     {/* to show or hide the modal  */}
     <Modalpage show={show} setShow={setShow} title={title} setTitle={setTitle} deadline={deadline} 
        setDeadline={setDeadline} status={status} setStatus={setStatus} handleModalOpen={handleModalOpen}
-       handleClose={handleClose} handleAdd={handleAdd} handleChange={handleChange} options={options} isAdd={isAdd} handleEdit={handleEdit}
+       handleClose={handleClose} handleAdd={handleAdd} handleChange={handleChange} options={options} isAdd={isAdd} handleUpdate={handleUpdate}
     />
     {/*display the list items: for this implementation data is saved as array of object in dataService file temporary.*/}
     {toDoData.map((item)=>(
